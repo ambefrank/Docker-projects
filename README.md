@@ -47,10 +47,13 @@ index.html
 </html>
 Next, we will create a new file named docker-compose.yml in our main project directory as our configuration file for deploying the frontend application within a Docker container.
 ----------------------------------------------------------------------------------------------------------------
-##Dockerfile
+
+## Dockerfile
 
 FROM httpd:latest
+
 COPY ./frontend/index.html /usr/local/apache2/htdocs/
+
 EXPOSE 80
 
 -------------------------------------------------------------------------------------------------------------------
